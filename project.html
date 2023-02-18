@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Monsters</title>
+    <link rel="stylesheet" href="project-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  </head>
+  <body>
+    <section class = "proj-header">
+      <nav>
+        <div>
+          <a href="index.html"><img src="images/COOKIE-MONSTERS_(png).png" class="logo"></a>
+        </div>
+        <div class="navBar" id="nav-bar">
+          <i class="fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="project.html" class="chosen">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul> 
+        </div>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <h1>Projects</h1>
+    </section>
+
+<!----project---->
+<section class = "project">
+    <h1>Our Projects</h1>
+    <p><i>"Freshly baked cookies that prioritize both quantity and quality at the same time."</i></p>
+
+    <div class="row">
+        <div class="proj-col">
+            <h3>Web Application Development for Startups</h3>
+            <p>Despite being a recently-formed software development company, we have
+                assisted and guided numerous startup companies in their endeavours and have been still
+                continuing to offer software assistance after the initial contract.</p>
+        </div>
+        <div class="proj-col">
+            <h3>Mobile Application Development</h3>
+            <p>Our team excels in a wide array of software development services, including mobile development,
+                may it be for a social media application or a mobile gaming application. Similar to our
+                web application development, we offer long-term software assistance after the initial contract.</p>
+        </div>
+        <div class="proj-col">
+            <h3>On-going SDG Project</h3>
+            <p>Our team does not only seek in expanding our name in the software development industry but also
+                aim to utilize our capabilities in achieving the SDGs. In collaboration with the WHO and DOH,
+                we have proposed to create a mobile / web application that would help the cohesiveness of the health care systems,
+                particularly in the emergency response department.</p>
+        </div>
+    </div>
+</section>
+
+<!-----project samples----->
+<section class = "proj-samples">
+    <h1>Project Samples</h1>
+    <p><i>Take a glimpse on how we turn our projects from code to life</i></p>
+
+    <div class="row">
+        <div class="proj-samp-col">
+            <img src = "images/WebDev_CodeSnippet.jpeg">
+            <h3>Web Application Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nisi.</p>
+        </div>
+        <div class="proj-samp-col">
+            <img src = "images/WildRift_iPhoneScreen.png">
+            <h3>Mobile Application Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nisi.</p>
+        </div>
+        <div class="proj-samp-col">
+            <img src = "images/On-going SDG project_iPhoneScreen.png" width = 10px height = 450px>
+            <h3>On-going SDG Project</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nisi.</p>
+        </div>
+    </div>
+</section>
+
+<!-----testimonials----->
+
+<section class = "testimonials">
+    <h1>Clients who had great bites from the cookie jar!</h1>
+    <p><i>Feedback from clients who tasted premium quality service.</i></p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src = "images/ElonMusk.jpeg">
+            <div>
+                <p>"This could be the future of Twitter."</p>
+                <h3>Elon Musk</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src = "images/SteveJobs.jpeg">
+            <div>
+                <p>"Cookie-Monster's services make me feel alive again."</p>
+                <h3>Steve Jobs</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <script>
+      let navBarLinks = document.getElementById("nav-bar");
+
+      function openMenu() {
+        navBarLinks.style.right = "0";
+      }
+
+      function closeMenu() {
+        navBarLinks.style.right = "-200px";
+      }
+
+    </script>
+
+  </body>
+</html>

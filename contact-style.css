@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(77, 77, 77, 0.7), rgba(35, 43, 59, 0.7)), url(images/cookieJar1.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+}
+
+.navBar {
+  padding-top: 10px;
+  flex: 1;
+  text-align: right;
+}
+
+.navBar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 25px;
+  position: relative;
+}
+
+.navBar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.navBar ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #004481;
+  display: block;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+.navBar ul li:not(:nth-of-type(4)):hover::after {
+  width: 100%;
+}
+
+.navBar ul li a.chosen::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #004481;
+  display: block;
+  margin-top: 5px;
+}
+
+nav .fa-regular {
+  display: none;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact-info i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.contact-form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.contact-form h2{
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50%-10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.contact-form .text-box:first-child{
+  margin-right: 15px;
+}
+
+.contact-form textarea{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.contact-form .send-btn{
+  float: right;
+  background: #2e94e3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact-form .send-btn:hover{
+  background: #0582e3;
+}
+
+@media screen and (max-width:700px){
+  .textBox h1 {
+    font-size: 25px;
+  }
+
+  .navBar ul li {
+    display: block;
+    padding: 10px;
+  }
+  
+  .navBar ul li a {
+    padding: 10px;
+  }
+
+  .navBar {
+    position: absolute;
+    background: #004481;
+    height: 99vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  .navBar ul li a.chosen::after {
+    display: none;
+  }
+
+  nav .fa-regular {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .contact-section{
+    flex-direction: column;
+  }
+
+  .contact-info {
+    margin: 30px 0px ;
+    padding-left: 0px;
+  }
+
+  .contact-form {
+    margin: 30px 0px ;
+    padding: 10px;
+  }
+
+  .contact-form h2 {
+    width: 90%;
+    font-size: 30px;
+  }
+
+  .contact-form, .contact-form textarea, .text-box{
+    width: 90%;
+  }  
+}
+  
+ 
